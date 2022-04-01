@@ -1,0 +1,83 @@
+---
+settings:
+  name: Global File Cache
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ja-jp,us-en,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: Cloud Manager のすべてのドキュメント
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: グローバルファイルキャッシュのドキュメント
+    url: "/index.html"
+  - title: リリースノート
+    entries:
+    - title: 新機能
+      url: "/whats-new.html"
+    - title: 解決済みの問題です
+      url: "/fixed-issues.html"
+  - title: はじめに
+    entries:
+    - title: グローバルファイルキャッシュについて説明します
+      url: "/concept-gfc.html"
+    - title: グローバルファイルキャッシュの前提条件
+      url: "/concept-before-you-begin-to-deploy-gfc.html"
+    - title: Global File Cache を導入してライセンスを取得
+      url: "/task-gfc-getting-started.html"
+    - title: Global File Cache Edge の前提条件
+      url: "/download-gfc-resources.html"
+    - title: グローバルファイルキャッシュエッジを導入します
+      url: "/task-deploy-gfc-edge-instances.html"
+  - title: グローバルファイルキャッシュを使用します
+    entries:
+    - title: エンドユーザトレーニング
+      url: "/concept-gfc-enduser-training.html"
+    - title: 追加情報
+      url: "/reference-gfc-additional-information.html"
+  - title: 知識とサポート
+    entries:
+    - title: サポートに登録します
+      url: "/task-support-registration.html"
+    - title: ヘルプを表示します
+      url: "/task-get-help.html"
+  - title: 法的通知
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: はじめに
+    links:
+    - title: グローバルファイルキャッシュについて説明します
+      url: concept-gfc.html
+    - title: 新機能
+      url: whats-new.html
+    - title: 制限
+      url: concept-gfc.html#limitations
+  - title: コンポーネントを導入する
+    links:
+    - title: ストレージプラットフォームとして Cloud Volumes ONTAP を導入
+      url: task-gfc-getting-started.html#deploy-cloud-volumes-ontap-as-your-storage-platform
+    - title: Global File Cache Management Server および Global File Cache Core を導入します
+      url: task-gfc-getting-started.html#enable-global-file-cache-in-your-working-environment
+    - title: グローバルファイルキャッシュエッジインスタンスを展開します
+      url: task-deploy-gfc-edge-instances.html
+  - title: ユーザのトレーニング
+    links:
+    - title: エンドユーザトレーニング
+      url: concept-gfc-enduser-training.html
+  - title: ブログコミュニティ
+    links:
+    - title: ネットアップコミュニティ
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central のブログです
+      url: https://cloud.netapp.com/blog
+    - title: クラウドに関する Web セミナー
+      url: https://cloud.netapp.com/events
+  - title: その他のリソース
+    links:
+    - title: Cloud Central のユースケース
+      url: https://cloud.netapp.com/global-file-cache
+product-family: {}

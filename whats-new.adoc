@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, gfc, global file cache' 
+summary: Global File Cache の新機能について説明します。 
+---
+= Global File Cache の新機能
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Global File Cache の新機能について説明します。
+
+
+
+== 2021 年 12 月 17 日（バージョン 1.2.0 ）
+
+
+
+=== OpenSSL モジュールがバージョン 1.1.1L にアップグレードされました。
+
+これは最新バージョンであり、より安全です。このモジュールは、 GFC エッジと GFC コア間のセキュアな通信に使用されます。
+
+
+
+=== ロギングインフラが強化されました。
+
+
+
+== 2021 年 6 月 9 日（バージョン 1.1.0 ）
+
+
+
+=== 「エッジ同期」機能が追加されました。
+
+この機能では、リモートオフィスの複数のエッジが同期され、データは常にキャッシュ / ウォームに保存されます。ファイルを 1 つのエッジでフラッシュ / フェッチすると、 Edge Sync に参加するすべてのエッジ上の同じファイルが更新され、キャッシュされます。のセクション 8.4 を参照してください https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["『 NetApp Global File Cache User Guide 』を参照してください"^] を参照してください。
+
+
+
+=== OpenSSL モジュールがバージョン 1.1.1k にアップグレードされました。
+
+これは最新バージョンであり、より安全です。このモジュールは、 GFC エッジと GFC コア間のセキュアな通信に使用されます。
+
+
+
+=== ライセンス登録ページが更新されました。
+
+GFC ライセンス登録ページに、ネットアップのサブスクリプションを通じてライセンスをアクティブ化したときに表示されるライセンス数が追加されました。
+
+
+
+== 2021 年 3 月 21 日（バージョン 1.0.3 ）
+
+
+
+=== GFC プロセスを Windows Defender から自動的に除外するためのソフトウェアインストーラのアップデート。
+
+グローバルファイルキャッシュソフトウェアインストーラでは、すべての GFC プロセスが Windows Defender ソフトウェアのオンデマンドスキャンから除外されるようになりました。
+
+
+
+=== 新しい [ ポリシー構成 ] タブが構成コンソールに追加されました。
+
+この設定タブでは、 GFC コアから事前入力ジョブを追加できます。
+
+
+
+=== パフォーマンスと安定性を向上させながら、メモリ使用量を削減するようにソフトウェアを強化。
