@@ -156,11 +156,8 @@ AWS では、 127GB の汎用 SSD を搭載した m4.xlarge インスタンス�
 
 == 制限
 
-* Cloud Manager でサポートされているバージョンのグローバルファイルキャッシュでは、中央ストレージとして使用されるバックエンドストレージプラットフォームが、 Azure または AWS に Cloud Volumes ONTAP のシングルノードまたは HA ペアを導入している作業環境である必要があります。
-+
+Cloud Manager でサポートされているバージョンのグローバルファイルキャッシュでは、中央ストレージとして使用されるバックエンドストレージプラットフォームが、 Azure または AWS に Cloud Volumes ONTAP のシングルノードまたは HA ペアを導入している作業環境である必要があります。
+
 他のストレージプラットフォームやクラウドプロバイダは、現時点では Cloud Manager を使用してサポートされていませんが、従来の導入手順を使用して導入することもできます。
 
-+
 その他の構成、たとえば、 Cloud Volumes Service または Cloud Volumes ONTAP を使用する Microsoft Azure 、 Google Cloud 、 AWS 上のグローバルファイルキャッシュは、従来の手順を使用して引き続きサポートされます。を参照してください link:https://cloud.netapp.com/global-file-cache/onboarding["グローバルファイルキャッシュの概要とオンボーディング"^] を参照してください。
-
-
