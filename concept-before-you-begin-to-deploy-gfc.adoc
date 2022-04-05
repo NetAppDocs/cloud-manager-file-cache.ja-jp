@@ -78,26 +78,6 @@ Global File Cache Core インスタンスは非常にスケーラブルで、 Co
 
 
 
-=== Cloud Manager インスタンス
-
-Cloud Volumes ONTAP for Azure をストレージプラットフォームとして使用している場合は、最新のものに示す権限が Cloud Manager に割り当てられていることを確認してください https://occm-sample-policies.s3.amazonaws.com/Policy_for_cloud_Manager_Azure_3.9.12.json["Azure 向け Cloud Manager ポリシー"^]。
-
-新しく作成したインスタンスには、デフォルトで必要なすべての権限が付与されます。バージョン 3.8.7 （ 2020 年 8 月 3 日）より前のバージョンでインスタンスを導入している場合は、これらの項目を追加する必要があります。
-
-[source, json]
-----
-"Microsoft.Resources/deployments/operationStatuses/read",
-"Microsoft.Insights/Metrics/Read",
-"Microsoft.Compute/virtualMachines/extensions/write",
-"Microsoft.Compute/virtualMachines/extensions/read",
-"Microsoft.Compute/virtualMachines/extensions/delete",
-"Microsoft.Compute/virtualMachines/delete",
-"Microsoft.Network/networkInterfaces/delete",
-"Microsoft.Network/networkSecurityGroups/delete",
-"Microsoft.Resources/deployments/delete",
-----
-
-
 === ストレージプラットフォーム（ボリューム）
 
 バックエンドストレージプラットフォームは、この場合、導入した Cloud Volumes ONTAP インスタンスで SMB ファイル共有を提供します。グローバルファイルキャッシュを通じて公開される共有では、 NTFS 権限によるアクセス権の制限を行いながら、 Everyone グループに共有レベルのフルコントロールを許可する必要があります。
@@ -108,7 +88,7 @@ Cloud Volumes ONTAP インスタンスで SMB ファイル共有をセットア�
 * 作成するボリュームの名前とサイズ、ボリュームを作成するアグリゲートの名前、および共有名。
 
 
-ボリュームは、アプリケーション用のデータセットの合計数に対応できるだけの大きさであり、データセットの拡張に合わせて拡張できることを推奨します。作業環境に複数のアグリゲートがある場合は、を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-storage.html["既存のアグリゲートの管理"^] をクリックして、新しいボリュームの空きスペースが最も多いアグリゲートを確認します。
+ボリュームは、アプリケーション用のデータセットの合計数に対応できるだけの大きさであり、データセットの拡張に合わせて拡張できることを推奨します。作業環境に複数のアグリゲートがある場合は、を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-aggregates.html["既存のアグリゲートの管理"^] をクリックして、新しいボリュームの空きスペースが最も多いアグリゲートを確認します。
 
 
 

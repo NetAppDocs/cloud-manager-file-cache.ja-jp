@@ -207,7 +207,6 @@
   <block id="d30bfe96d7c62ab706482cb5c2b4a1ec" category="section-title">グローバルファイルキャッシュエッジの設計と導入</block>
   <block id="5698363b5f7247a6f653aa572ae1cb51" category="paragraph">要件によっては、ブランチオフィスでの同時ユーザーセッションに基づいて、 1 つまたは複数のグローバルファイルキャッシュエッジインスタンスを配置する必要があります。Edge インスタンスは、ブランチオフィス内のエンドユーザに仮想ファイル共有を提供します。これは、関連付けられた Global File Cache Core インスタンスから透過的に拡張されています。グローバルファイルキャッシュエッジには、ブランチオフィス内のキャッシュされたファイルを含む「 d:\`NTFS ボリューム」が含まれている必要があります。</block>
   <block id="f545daefd1b990207b6063d1a0d100bb" category="inline-link-macro">サイジングガイドライン</block>
-  <block id="a9f922d8715f1a0a77c5687f0cb5aa93" category="admonition">グローバルファイルキャッシュエッジについては、を理解することが重要です <block ref="59a96d2edb633193f59953bdf68d36ab" category="inline-link-macro-rx"></block>。これは、グローバルファイルキャッシュの配置に適した設計を行うのに役立ちます。また、拡張性、リソースの可用性、および冗長性の観点から、環境に最適なものを決定する必要があります。</block>
   <block id="1f01263cf82c613fccc25592d0c644d1" category="section-title">グローバルファイルキャッシュエッジインスタンス</block>
   <block id="ec0d814add25a4fc3dfc82c64e2a0a25" category="paragraph">グローバルファイルキャッシュエッジインスタンスを導入する場合は、 Windows Server 2016 Standard Edition または Datacenter Edition 、または Windows Server 2019 Standard Edition または Datacenter Edition を導入するか、 Global File Cache の .OVA または「 .vhd 」テンプレートを使用して、単一の VM をプロビジョニングする必要があります。 これには、 Windows Server オペレーティングシステム（任意選択）およびグローバルファイルキャッシュソフトウェアが含まれます。</block>
   <block id="8ea62d632a69911dcf193e9803b1195a" category="section-title">クイックステップ</block>
@@ -219,7 +218,6 @@
   <block id="b79d82b1580b1c089977036ab5909a2b" category="section-title">グローバルファイルキャッシュエッジの要件</block>
   <block id="dda6766b3822de333933a3770e1ae688" category="paragraph">Global File Cache Edge は、 Windows Server 2016 および 2019 をサポートするすべてのプラットフォームで機能するように設計されており、企業のリモートオフィスなどに IT を簡易化できます。さらに、グローバルファイルキャッシュは、既存のハードウェアインフラストラクチャ、仮想化、ハイブリッド / パブリッククラウド環境に導入できます。ほとんどの場合、基本レベルの要件を満たすことができます。</block>
   <block id="137e4d3e0bc5586af6fc7ca9441511e1" category="inline-link-macro">サイジングガイドライン</block>
-  <block id="4ac6218bd988565bf3ec6d86dd25e5ee" category="paragraph">Global File Cache Edge が最適に機能するには、次のハードウェアおよびソフトウェアリソースが必要です。全体的なサイジングガイドラインの詳細については、を参照してください <block ref="9215c6eb660e6747de22e76d94c0e37f" category="inline-link-macro-rx"></block>。</block>
   <block id="831485d3736514b490af98e2fdcac477" category="section-title">強化されたサーバーアプライアンス</block>
   <block id="667527cf2158cc0bb126a5aa3508ed66" category="paragraph">グローバルファイルキャッシュインストールパッケージを使用すると、任意の Microsoft Windows Server インスタンス上に強化されたソフトウェアアプライアンスが作成されます。_ グローバルファイルキャッシュパッケージをアンインストールしないでください。グローバルファイルキャッシュをアンインストールすると、サーバーインスタンスの機能に影響が及び、サーバーインスタンスの完全な再構築が必要になる場合があります。</block>
   <block id="976611c38f37696030731d275b8d5432" category="section-title">物理ハードウェアの要件</block>
@@ -423,17 +421,12 @@
   <block id="8de20cb9eef18978ba168ebc839695b7" category="paragraph">Global File Cache Core インスタンスは非常にスケーラブルで、 Core あたり 3,000 ユーザの同時ユーザ数を推奨します。これは、最も一般的なワークロードのタイプと平均ファイルサイズに大きく依存します。</block>
   <block id="b878b843693a16500d3da98423bf22b6" category="paragraph">このセクションで説明する前提条件は、クラウドにインストールされているコンポーネント（ Global File Cache Management Server および Global File Cache Core ）を対象としています。</block>
   <block id="b51baa22d09e6c9f1931a23ebef6347d" category="paragraph">グローバルファイルキャッシュエッジの前提条件について説明します <block ref="dc13b95521107f0e6174e0d4f00812b4" category="inline-link-macro-rx"></block>。</block>
-  <block id="62cfe6527ad2ad6b51cb8ccaf7bf34f2" category="section-title">Cloud Manager インスタンス</block>
-  <block id="da853f2b1b70f8830685d4d1ae8096ca" category="inline-link">Azure 向け Cloud Manager ポリシー</block>
-  <block id="37d08d548f640449b7f0187fd2333529" category="paragraph">Cloud Volumes ONTAP for Azure をストレージプラットフォームとして使用している場合は、最新のものに示す権限が Cloud Manager に割り当てられていることを確認してください<block ref="71541056249333863ccd60a02c145e24" category="inline-link-rx"></block>。</block>
-  <block id="d7bcfb31085ad76548d1b7a16fff01fb" category="paragraph">新しく作成したインスタンスには、デフォルトで必要なすべての権限が付与されます。バージョン 3.8.7 （ 2020 年 8 月 3 日）より前のバージョンでインスタンスを導入している場合は、これらの項目を追加する必要があります。</block>
   <block id="891a589deeeaf68084584fbfae4c3ae7" category="section-title">ストレージプラットフォーム（ボリューム）</block>
   <block id="e6da02886af47462759989718f62ea49" category="paragraph">バックエンドストレージプラットフォームは、この場合、導入した Cloud Volumes ONTAP インスタンスで SMB ファイル共有を提供します。グローバルファイルキャッシュを通じて公開される共有では、 NTFS 権限によるアクセス権の制限を行いながら、 Everyone グループに共有レベルのフルコントロールを許可する必要があります。</block>
   <block id="152468376710017819b274fb14a70617" category="paragraph">Cloud Volumes ONTAP インスタンスで SMB ファイル共有をセットアップしていない場合は、インストール時に設定できるように次の情報を用意しておく必要があります。</block>
   <block id="981640f9fb09fe09a937c7da955d9dfb" category="list-text">Active Directory ドメイン名、ネームサーバの IP アドレス、 Active Directory 管理者のクレデンシャル。</block>
   <block id="794cb058ebafe2e7b0df56dea2e389d4" category="list-text">作成するボリュームの名前とサイズ、ボリュームを作成するアグリゲートの名前、および共有名。</block>
   <block id="5a546cf8c7438d3947e0f034bfe5f5af" category="inline-link">既存のアグリゲートの管理</block>
-  <block id="19bd3fbf3c96e46437e41367e7026677" category="paragraph">ボリュームは、アプリケーション用のデータセットの合計数に対応できるだけの大きさであり、データセットの拡張に合わせて拡張できることを推奨します。作業環境に複数のアグリゲートがある場合は、を参照してください<block ref="39d18222bad8d4a70367cc75016bb156" category="inline-link-rx"></block> をクリックして、新しいボリュームの空きスペースが最も多いアグリゲートを確認します。</block>
   <block id="a47494fbd5157213a61c49892644da68" category="paragraph">このグローバルファイルキャッシュ管理サーバでは、クラウドプロバイダサブスクリプションサービスに接続して次の URL にアクセスするために、 HTTPS （ TCP ポート 443 ）経由の外部アクセスが必要です。</block>
   <block id="224c646ebc1a3e88e1cdb258481bcfd0" category="inline-link"><block ref="224c646ebc1a3e88e1cdb258481bcfd0" category="inline-link-rx"></block></block>
   <block id="f12ef780b481a5c2973143651b98129e" category="list-text"><block ref="f12ef780b481a5c2973143651b98129e" category="inline-link-rx"></block></block>
@@ -534,4 +527,7 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
   <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">その他のリソース</block>
   <block id="cc81b1698333ba727fd5bde305c3cf08" category="sidebar">Cloud Central のユースケース</block>
+  <block id="c312a13dafd8799651830cedd659bf52" category="admonition">グローバルファイルキャッシュエッジについては、を理解することが重要です <block ref="e948e8be7ddbb6b86ab680f17f3dc3fb" category="inline-link-macro-rx"></block>。これは、グローバルファイルキャッシュの配置に適した設計を行うのに役立ちます。また、拡張性、リソースの可用性、および冗長性の観点から、環境に最適なものを決定する必要があります。</block>
+  <block id="189b29195f2b3701055f4c94a0c1ffad" category="paragraph">Global File Cache Edge が最適に機能するには、次のハードウェアおよびソフトウェアリソースが必要です。全体的なサイジングガイドラインの詳細については、を参照してください <block ref="e948e8be7ddbb6b86ab680f17f3dc3fb" category="inline-link-macro-rx"></block>。</block>
+  <block id="03120f4ae41820e46fabced95a93dbb5" category="paragraph">ボリュームは、アプリケーション用のデータセットの合計数に対応できるだけの大きさであり、データセットの拡張に合わせて拡張できることを推奨します。作業環境に複数のアグリゲートがある場合は、を参照してください<block ref="acc2071beb330a8d456d30e0940aedbc" category="inline-link-rx"></block> をクリックして、新しいボリュームの空きスペースが最も多いアグリゲートを確認します。</block>
 </blocks>
