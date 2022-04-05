@@ -6,6 +6,7 @@ summary: グローバルファイルキャッシュエッジソフトウェア�
 ---
 = グローバルファイルキャッシュエッジインスタンスの展開を開始する前に
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

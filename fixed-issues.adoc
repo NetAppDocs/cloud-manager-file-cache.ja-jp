@@ -6,6 +6,7 @@ summary: グローバルファイルキャッシュで解決された問題を�
 ---
 = グローバルファイルキャッシュの問題が解決されました
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

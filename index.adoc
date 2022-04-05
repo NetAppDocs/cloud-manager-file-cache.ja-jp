@@ -7,6 +7,7 @@ summary: ネットアップのインテリジェントなグローバルファ�
 ---
 = Global File Cache のドキュメント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

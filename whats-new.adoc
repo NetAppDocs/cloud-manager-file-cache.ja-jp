@@ -6,6 +6,7 @@ summary: Global File Cache の新機能について説明します。
 ---
 = Global File Cache の新機能
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

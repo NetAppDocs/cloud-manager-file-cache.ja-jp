@@ -6,6 +6,7 @@ summary: Cloud Manager を使用して、グローバルファイルキャッシ
 ---
 = はじめに
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
