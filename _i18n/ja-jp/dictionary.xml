@@ -7,7 +7,6 @@
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">こちらをご覧ください</block>
   <block id="9da15b0ec3a63afcb01d7f2726c42994" category="list-text">よくある質問とその回答のリストを参照してください <block ref="19a12809be10088b3860ea30b7a5724d" category="inline-link-macro-rx"></block></block>
   <block id="15b783a23e5291e1ffb9f638317d4bcb" category="inline-link">『 NetApp Global File Cache User Guide 』を参照してください</block>
-  <block id="26dbf4bee42458d4736cd9fd8e959fc6" category="list-text"><block ref="26dbf4bee42458d4736cd9fd8e959fc6" category="inline-link-rx"></block></block>
   <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="list-text">ネットアップの製品マニュアル</block>
   <block id="1b28ae1c9b0f1461cf0ea5fa195be216" category="list-text">ネットアップのクラウド製品に関するその他のドキュメントを参照してください<block ref="0510c3621321be434699160c80a14647" category="inline-link-rx"></block></block>
   <block id="1acb7294e54390a8c41c4c19b14f4c46" category="list-text">すべてのネットアップ製品の追加ドキュメントを参照<block ref="01463e984d77180cbd9edcf8c8c1f237" category="inline-link-rx"></block></block>
@@ -140,7 +139,6 @@
   <block id="0f654146c1b65006561ea8e31d5516dc" category="paragraph">この構成では、グローバルファイルキャッシュ管理サーバやグローバルファイルキャッシュコアなど、グローバルファイルキャッシュサーバ側の環境全体を Cloud Manager 内から導入して管理できます。</block>
   <block id="a4bae3b774c4cc05ca00a01a97ff00ca" category="section-title">手動での導入オプション</block>
   <block id="2eb40debe07bb6d7b909dce2c34426b1" category="paragraph">グローバルファイルキャッシュ構成は、パブリッククラウドストレージインフラにインストールされた ONTAP 、 Cloud Volumes Service 、 Azure NetApp Files 、 Amazon FSX for Cloud Volumes ONTAP でもサポートされています。オンプレミスソリューションは、ネットアップの AFF プラットフォームと FAS プラットフォームでも利用できます。このインストールでは、 Cloud Manager ではなく、グローバルファイルキャッシュサーバ側のコンポーネントを手動で設定して導入する必要があります。</block>
-  <block id="71c2e99da61c94e7dc7d60497059a783" category="paragraph">を参照してください<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block> を参照してください。</block>
   <block id="18fdbdb3de2540e1f631602b7bc2010f" category="section-title">グローバルファイルキャッシュの仕組み</block>
   <block id="8564f172539c6a5101d48785899b17a0" category="paragraph">グローバルファイルキャッシュは、アクティブなデータセットをグローバルにリモートオフィスにキャッシュするソフトウェアファブリックを作成します。その結果、ビジネスユーザは透過的なデータアクセスを保証し、グローバルな規模で最適なパフォーマンスを実現できます。</block>
   <block id="c124c2afbd0b581682d787d402d2b2cf" category="inline-image-macro">Edge および Core のグローバルファイルキャッシュコンポーネントを示す図。</block>
@@ -175,7 +173,6 @@
   <block id="30b7dc0ba4cd2cf04c1eda7c3a7b045a" category="paragraph">グローバルファイルキャッシュには、ソフトウェアベースのライセンス管理サーバ（ LMS ）が含まれています。これにより、ライセンス管理を統合し、自動化されたメカニズムを使用してすべてのコアインスタンスとエッジインスタンスにライセンスを導入できます。</block>
   <block id="24b5cd8cad83af73f3fef17c36994df9" category="paragraph">データセンターまたはクラウドに最初のコアインスタンスを導入するときに、そのインスタンスを組織の LMS として指定することができます。この LMS インスタンスは一度設定され、 HTTPS 経由でサブスクリプションサービスに接続し、サブスクリプションの有効化時にサポート / 運用部門から提供されたカスタマー ID を使用してサブスクリプションを検証します。この指定を行ったら、お客様 ID と LMS インスタンスの IP アドレスを入力して、 Edge インスタンスを LMS に関連付けます。</block>
   <block id="3fbdffd6b695a9bc6ac6bcd1e40fd200" category="paragraph">追加の Edge ライセンスを購入するか、サブスクリプションを更新すると、サポート / 運用部門は、サイト数やサブスクリプションの終了日など、ライセンスの詳細を更新します。LMS がサブスクリプションサービスを照会すると、ライセンスの詳細が LMS インスタンスで自動的に更新され、 GFC Core インスタンスおよび Edge インスタンスに適用されます。</block>
-  <block id="783b7f6f326468b70647d047949b4a2d" category="paragraph">を参照してください<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block> ライセンスの詳細については、を参照してください。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">制限</block>
   <block id="077a85a83497688c4768eb7e293d344f" category="list-text">Cloud Manager でサポートされているバージョンのグローバルファイルキャッシュでは、中央ストレージとして使用されるバックエンドストレージプラットフォームが、 Azure または AWS に Cloud Volumes ONTAP のシングルノードまたは HA ペアを導入している作業環境である必要があります。</block>
   <block id="99f7abe9affc2a21c16a77c9bb170233" category="paragraph">他のストレージプラットフォームやクラウドプロバイダは、現時点では Cloud Manager を使用してサポートされていませんが、従来の導入手順を使用して導入することもできます。</block>
@@ -188,22 +185,16 @@
   <block id="17fcbeb5f192793fd41f089a59730538" category="list-text">Windows Server 2016 仮想テンプレート：</block>
   <block id="7cfa172f8a8d357df3a2106ac8c6b398" category="inline-link">NetApp GFC を含む Windows Server * 2016.OVA （ VMware vSphere 6.5 以降）</block>
   <block id="835e49a2c436ab4a585d71025b4cc7fa" category="inline-link">NetApp GFC を含む Windows Server 2016-0x （ Microsoft Hyper-V ）</block>
-  <block id="74c1c198764376851e343ef90700832f" category="paragraph"><block ref="d490fcd4b2c2fb0ec02e4d9cb7241c2c" category="inline-link-rx"></block>
-<block ref="5ce4994e3574e1519846ea4bae459955" category="inline-link-rx"></block></block>
   <block id="7eeb858e6d60489627b61144a4b897b9" category="list-text">Windows Server 2019 仮想テンプレート：</block>
   <block id="02e6ddd105b75a46cfcba50b442be725" category="inline-link">Windows Server 206.OVA （ NetApp GFC を含む）（ VMware vSphere 6.5 以降）</block>
   <block id="135435a8d8eb3533e52dfec2d082e667" category="inline-link">NetApp GFC （ Microsoft Hyper-V ）を含む Windows Server 19VHDX</block>
-  <block id="a68c19a669a835b1ba7bd2bc866c7be7" category="paragraph"><block ref="a0714920be08541f39247af287ebb1c0" category="inline-link-rx"></block>
-<block ref="23408a8df3be8898d68f3f43486f46e0" category="inline-link-rx"></block></block>
   <block id="4bf707356ffc6bfcdc7eaddeb5d9ca6b" category="list-text">グローバルファイルキャッシュエッジソフトウェア：</block>
   <block id="faf7d644098124d7a6915b6cc59a0988" category="inline-link">NetApp GFC ソフトウェアインストールパッケージ（ .EXE ）</block>
-  <block id="e4ab66bf075d22009f41eea8ac42df07" category="paragraph"><block ref="e4ab66bf075d22009f41eea8ac42df07" category="inline-link-rx"></block></block>
   <block id="c02f6931ac1cb0d6f6c43728f2c59458" category="list-text">Global File Cache SCOM （ Microsoft Systems Center Operations Manager ）パッケージ：</block>
   <block id="6cfcd1fac0b2e806d26cc363f98afe52" category="inline-link">NetApp GFC SCOM 管理パッケージ（ ZIP ）</block>
   <block id="94ab5cbee962c68b827980048c10c188" category="paragraph"><block ref="94ab5cbee962c68b827980048c10c188" category="inline-link-rx"></block></block>
   <block id="e2d416ed29232c19a683a619f4500452" category="list-text">グローバルファイルキャッシュのドキュメント：</block>
   <block id="5ce7f81a8ae145f3b72b93e3696353d9" category="inline-link">『 NetApp Global File Cache User Guide 』（ .pdf ）</block>
-  <block id="902e21b51073e1263d69ddcfe6053a5d" category="paragraph"><block ref="902e21b51073e1263d69ddcfe6053a5d" category="inline-link-rx"></block></block>
   <block id="d30bfe96d7c62ab706482cb5c2b4a1ec" category="section-title">グローバルファイルキャッシュエッジの設計と導入</block>
   <block id="5698363b5f7247a6f653aa572ae1cb51" category="paragraph">要件によっては、ブランチオフィスでの同時ユーザーセッションに基づいて、 1 つまたは複数のグローバルファイルキャッシュエッジインスタンスを配置する必要があります。Edge インスタンスは、ブランチオフィス内のエンドユーザに仮想ファイル共有を提供します。これは、関連付けられた Global File Cache Core インスタンスから透過的に拡張されています。グローバルファイルキャッシュエッジには、ブランチオフィス内のキャッシュされたファイルを含む「 d:\`NTFS ボリューム」が含まれている必要があります。</block>
   <block id="f545daefd1b990207b6063d1a0d100bb" category="inline-link-macro">サイジングガイドライン</block>
@@ -248,7 +239,6 @@
   <block id="e48ab3024cfcf431a14c3003435bfd56" category="paragraph">* 最小サイズは、アクティブデータセットの 2 倍です。キャッシュボリューム（ D ： \ ）は拡張が可能で、 Microsoft Windows NTFS ファイルシステムの制限によってのみ制限されます。</block>
   <block id="c05b754004fbd4130eae9e62448598e2" category="section-title">グローバルファイルキャッシュインテリジェントファイルキャッシュのディスク要件</block>
   <block id="85b5f3c25b56d8971fb15ba1b85c9098" category="paragraph">グローバルファイルキャッシュインテリジェントファイルキャッシュディスク（ D ： \ ）のディスクレイテンシは、同時ユーザーあたり 0.5 ミリ秒未満の平均 I/O ディスクレイテンシと 1 MiBps のスループットを実現する必要があります。</block>
-  <block id="004900c685652a75205564c9679b2be4" category="paragraph">詳細については、を参照してください<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block>。</block>
   <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">ネットワーキング</block>
   <block id="07b05d86c9937c2ed6c68c1c3c82ba9a" category="list-text">ファイアウォール：グローバルファイルキャッシュエッジと管理サーバとコアインスタンスの間で TCP ポートを許可する必要があります。</block>
   <block id="79329656b58b4f751ab1443743fcbee0" category="paragraph">グローバルファイルキャッシュ TCP ポート： 443 （ HTTPS-LMS ）、 6618 ～ 6630 。</block>
@@ -259,7 +249,6 @@
   <block id="35bd173c5c09760e27239213b562c7a2" category="paragraph">最適なエクスペリエンスとパフォーマンスを確保するには、『グローバルファイルキャッシュユーザーガイド』に記載されている Microsoft Windows クライアントの要件およびベストプラクティスに準拠することが重要です。これは、すべてのバージョンの Microsoft Windows に適用されます。</block>
   <block id="a0d1fd507848b71fc407746a94f31ef3" category="section-title">ファイアウォールとアンチウイルスのベストプラクティス</block>
   <block id="5effefb1057efd2748258b65d97bf200" category="paragraph">グローバルファイルキャッシュは、最も一般的なウィルス対策アプリケーションスイートがグローバルファイルキャッシュと互換性があるかどうかを検証するために相応の努力を払いますが、ネットアップでは、これらのプログラムや関連する更新、サービスパック、変更によって発生する互換性の問題やパフォーマンス上の問題については保証できず、責任も負いません。</block>
-  <block id="b924b9145d6f4426935534d7b26de3da" category="paragraph">グローバルファイルキャッシュは、グローバルファイルキャッシュが有効なインスタンス（コアまたはエッジ）に監視ソリューションやアンチウイルスソリューションをインストールしたり、適用したりすることは推奨しません。ソリューションをインストールするか、選択したか、またはポリシーに基づいて、次のベストプラクティスと推奨事項を適用する必要があります。一般的なウィルス対策スイートについては、の付録 A を参照してください<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block>。</block>
   <block id="1d8d6b8f9abcab53172954c91e5d8de9" category="section-title">ファイアウォールの設定</block>
   <block id="cd476ae4644da8d9986293ca4ccec11c" category="list-text">Microsoft ファイアウォール：</block>
   <block id="74d0be744832a30201de162b50221ae7" category="list-text">ファイアウォールの設定をデフォルトのままにします。</block>
@@ -389,7 +378,6 @@
   <block id="366cc1d4ff6cff6676cf51ea1a645ab0" category="list-text">インストールの選択を確認し、 * Install * をクリックしてインストールを開始します。</block>
   <block id="ca226cca3bd1375b5e9fbcf3bd9cb3be" category="paragraph">インストールプロセスが開始されます。</block>
   <block id="749c0e89c28cfa8efa0ef88d80e309b9" category="list-text">インストールが完了したら、プロンプトが表示されたらサーバをリブートします。</block>
-  <block id="a75f59b7ae683d16a9279c8eec69424a" category="paragraph">グローバルファイルキャッシュエッジの高度な設定の詳細については、を参照してください<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block>。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
   <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9 に関する注意事項</block>
   <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
@@ -471,7 +459,6 @@
   <block id="f74032e7a801122d16bdf48f04518b8a" category="list-text">ポリシー設定でローカルに実行されているライセンス管理サーバ（ LMS ）サービスのハード依存関係を削除。</block>
   <block id="1835c27cfc517067592779b50d13190c" category="list-text">GFC カーネルドライバは、 Windows Server 2014/2019 の SMB Server サービスでクラッシュが発生しないように強化されています。</block>
   <block id="5876df88731069c35bfd4f3ea17e7db0" category="list-text">LMS サービスの例外を修正しました。</block>
-  <block id="7e2a74fd4a9764c984dceb6c8d6edcf2" category="list-text">LMS 、 LMC 、および TappN サービスのサービス開始タイプが「自動遅延」から「自動」に変更されました。</block>
   <block id="f207ae57dc9dfe83885fb108696cb88c" category="list-text">設定 UI の [ 事前入力の編集 ] ページに、 Edge ホスト名が正しく表示されるようになりました。</block>
   <block id="9437dcfd300c52c159a6d4703daa54ad" category="list-text">ライセンス登録時にネットアップライセンスサブスクリプションサーバからの JSON 応答を解析する問題が修正されました。</block>
   <block id="e8cdf46b30eda1b6da8eed70347d25ac" category="list-text">事前入力（ TappN ）ログが拡張され、すべてのファイルのファイル転送ステータスが記録されるようになりました。</block>
@@ -497,7 +484,6 @@
   <block id="13879d09fb35e1a9c0fd7f6435bfa323" category="paragraph"><block ref="13879d09fb35e1a9c0fd7f6435bfa323" category="inline-link-macro-rx"></block></block>
   <block id="b9c5f151d07a94019ba26f5d3579bcf9" category="inline-link-macro">Word 文書 (.docx)</block>
   <block id="a314a20204b96ce855b4edecf455498b" category="list-text">オンボーディングコミュニケーション<block ref="ec13a4ed87a907c97165059568a0b0f6" category="inline-link-macro-rx"></block></block>
-  <block id="9084910038dd88a4c2a9aea7b0c1cd9e" category="paragraph">の第 13 章を参照してください<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block> を参照してください。</block>
   <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">ネットアップテクニカルサポートでサポートケースをオープンするには、事前に Cloud Manager にネットアップサポートサイトのアカウントを追加し、サポートに登録しておく必要があります。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">サポートに登録します</block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
@@ -576,4 +562,35 @@
   <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">[ * お問い合わせ * ] をクリックして、ネットアップ・テクニカル・サポートの電話番号を検索してください。</block>
   <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">[ * 問題 を開く * ] をクリックし、いずれかのオプションを選択して、 [ * 送信 * ] をクリックします。</block>
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">ネットアップの担当者がケースを確認し、すぐに対応を開始します。</block>
+  <block id="58560a40a2e236cad4c2d149ea65d296" category="paragraph">の第 13 章を参照してください<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="25cd9b4ac7b3c20c21ee2a72afe32aa0" category="section-title">2022年5月19日（バージョン1.3.0）</block>
+  <block id="ef54ea7bd608d08bb74526be3bf7a9b6" category="list-text">Edge Sync機能の構成UIページが更新されました。</block>
+  <block id="e30c0599dc23f8e20e7e385b763cb321" category="list-text">PowerShellコマンドレットを使用して複数エッジの事前取り込みジョブを同時に追加する場合、問題 を修正しました。</block>
+  <block id="146f385e115b5ea1c65e9d972583070f" category="list-text">LMS Web UIで、ネットアップサブスクリプションが表示されるように問題 が修正されました。</block>
+  <block id="499e122cd59d1ac8c905f8b0b26cd077" category="list-text">LMS設定PowerShellスクリプトでTLS 1.2が使用されるようになりました。</block>
+  <block id="161cf4dae64f2766612c0586313deb12" category="list-text">TappN (事前入力サービス)で問題 を修正し、一時的な切断やTumの再起動にもかかわらず、ジョブの実行を継続できるようにしました。</block>
+  <block id="3e97d9d5f3ba2c244689f2b32f79b026" category="list-text">空きキャッシュ領域が下限しきい値を下回った場合、TappN事前入力サービスが更新され、ファイルのフェッチがスキップされます。</block>
+  <block id="91bd85b0510e37378b14fab4ad5a4129" category="list-text">トレースログの作成中に'LMS（License Manager Server Service）の問題 を修正しました</block>
+  <block id="c2a4e35926866a1322a751f57a7f847a" category="list-text">Tumのログインフラストラクチャが更新され、拡張性が向上し、パフォーマンスが向上しました。</block>
+  <block id="959915525ca7f68401340816fbc38d13" category="list-text">License Manager Server Service（LMS）、License Manager Client Service（LMC）、およびPre-Population Service（TappN）のサービス開始タイプは、「Automatic Delayed（自動遅延）」から「Automatic（自動）」に変更されます。</block>
+  <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">このページです</block>
+  <block id="538b3d7be12bcc1f18433981df773bc1" category="paragraph">バージョン1.3.0のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。</block>
+  <block id="9463b6d7b9d38e544c6a7eb98988bb3b" category="section-title">新しいメタデータエッジ同期機能</block>
+  <block id="2e0922ffb3ae1ae6ac16997e734d5154" category="paragraph">この「メタデータエッジ同期」機能は、エッジ同期機能をコアフレームワークとして使用します。すべてのサブスクライブ済みエッジでメタデータ情報のみが更新され、Edgeマシンでファイル/フォルダが作成されます。</block>
+  <block id="2273c570a2dcacbb1c4bb77abccca54b" category="section-title">License Manager Serviceの機能強化</block>
+  <block id="03036f549995f5d3240d1c89c4f2f496" category="paragraph">Global File Cache License Management Server（LMS）サービスが拡張され、プロキシ設定が自動検出されるようになりました。これにより、シームレスな構成が可能になります。</block>
+  <block id="8596d7819fbc536d873f9c10275b172b" category="list-text"><block ref="8596d7819fbc536d873f9c10275b172b" category="inline-link-rx"></block></block>
+  <block id="50e21fbeaef96e9c5b880df1c4b9f7ec" category="paragraph">グローバルファイルキャッシュエッジの高度な設定の詳細については、を参照してください<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block>。</block>
+  <block id="824d9ff5b9f880482138717e4cd1fbd1" category="paragraph">を参照してください<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="81805391f402f98802b5d8c2d17333c1" category="paragraph">を参照してください<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block> ライセンスの詳細については、を参照してください。</block>
+  <block id="35c3f100dac7ee6eb477eab2e356ae84" category="paragraph"><block ref="f5576b6632dde85ccf0d016507692a9d" category="inline-link-rx"></block>
+<block ref="8e4798a9d84286ce2af64cff0824baca" category="inline-link-rx"></block></block>
+  <block id="40e4043ab4e9038318e0841ef06244c0" category="paragraph"><block ref="a53645675256480c99fed4a542cb3aca" category="inline-link-rx"></block>
+<block ref="4c2b578017747f1ec201cbd7ab6ca56c" category="inline-link-rx"></block></block>
+  <block id="c1f077f3784bbcdc13bd9524bf4918b7" category="paragraph"><block ref="c1f077f3784bbcdc13bd9524bf4918b7" category="inline-link-rx"></block></block>
+  <block id="5621e0035a66f3c4e8f0c7d5fff8a27f" category="paragraph"><block ref="5621e0035a66f3c4e8f0c7d5fff8a27f" category="inline-link-rx"></block></block>
+  <block id="e2ed07bb6933c98e532659727830bc52" category="inline-link-macro">次の手順を実行します</block>
+  <block id="4249aa75e9ea96b2d0d6b440b4f4b8f4" category="paragraph"><block ref="099296b5b160f80a9ee09ffb08be17ae" category="inline-link-macro-rx"></block> Global File Cache Edgeソフトウェアをアップグレードするには、次の手順に従います。</block>
+  <block id="db8e575f29e7264d9dbb628ab57766be" category="paragraph">詳細については、を参照してください<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block>。</block>
+  <block id="d9e1cd17d9a7ca15a50e2aaeed2f47c9" category="paragraph">グローバルファイルキャッシュは、グローバルファイルキャッシュが有効なインスタンス（コアまたはエッジ）に監視ソリューションやアンチウイルスソリューションをインストールしたり、適用したりすることは推奨しません。ソリューションをインストールするか、選択したか、またはポリシーに基づいて、次のベストプラクティスと推奨事項を適用する必要があります。一般的なウィルス対策スイートについては、の付録 A を参照してください<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block>。</block>
 </blocks>

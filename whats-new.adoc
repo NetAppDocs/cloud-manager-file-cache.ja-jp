@@ -18,6 +18,24 @@ Global File Cache の新機能について説明します。
 
 
 
+== 2022年5月19日（バージョン1.3.0）
+
+バージョン1.3.0のグローバルファイルキャッシュエッジソフトウェアは、から入手できます https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["このページです"]。
+
+
+
+=== 新しいメタデータエッジ同期機能
+
+この「メタデータエッジ同期」機能は、エッジ同期機能をコアフレームワークとして使用します。すべてのサブスクライブ済みエッジでメタデータ情報のみが更新され、Edgeマシンでファイル/フォルダが作成されます。
+
+
+
+=== License Manager Serviceの機能強化
+
+Global File Cache License Management Server（LMS）サービスが拡張され、プロキシ設定が自動検出されるようになりました。これにより、シームレスな構成が可能になります。
+
+
+
 == 2021 年 12 月 17 日（バージョン 1.2.0 ）
 
 
