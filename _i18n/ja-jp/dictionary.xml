@@ -397,7 +397,6 @@
   <block id="b8db548470197473b60a31cf63235132" category="list-text">分散ユーザー数 / グローバルファイルキャッシュエッジ比率</block>
   <block id="03e688bc8022fab0a6352ae303a4c929" category="list-text">分散ユーザー / グローバルファイルキャッシュコア比率</block>
   <block id="21b98a9bfa32dac32af60fe74c7fc07c" category="section-title">コアインスタンスごとのエッジインスタンスの数</block>
-  <block id="b19ff7ea43400c1c390961f4ab3a1b7f" category="paragraph">このガイドラインでは、グローバルファイルキャッシュコアインスタンスごとに最大 10 個のエッジインスタンスを推奨しています。グローバルファイルキャッシュコアインスタンスごとに最大 20 個のエッジを使用します。これは、最も一般的なワークロードのタイプと平均ファイルサイズに大きく依存します。より一般的なワークロードでは、コアごとに Edge インスタンスを追加できますが、このような場合は、ファイルセットのタイプとサイズに応じて、 Edge インスタンスと Core インスタンスの数を適切にサイジングするためにネットアップサポートにお問い合わせください。</block>
   <block id="2df25ab39ccf7d8a937806af504ab29c" category="admonition">複数のグローバルファイルキャッシュエッジインスタンスとコアインスタンスを同時に利用して、要件に応じてインフラをスケールアウトできます。</block>
   <block id="9aad1322fc19ca5e66c23b65ad4ae5fe" category="section-title">Edge インスタンスごとの同時ユーザー数</block>
   <block id="30ae6413ab8cb3af21bb3ef666c57dbe" category="paragraph">Global File Cache Edge では、キャッシュアルゴリズムとファイルレベルの差分データの処理が大幅に増加しています。1 つのグローバルファイルキャッシュエッジインスタンスは、専用の物理エッジインスタンスあたり最大 400 ユーザー、専用の仮想環境に最大 200 ユーザーを提供できます。これは、最も一般的なワークロードのタイプと平均ファイルサイズに大きく依存します。より大規模なコラボレーションファイルタイプの場合は、 Global File Cache Edge ごとの最大ユーザー数の 50% を目安にしてください（物理環境または仮想環境によって異なります）。平均ファイルサイズが 1MB 未満の一般的な Office アイテムの場合は、 Global File Cache Edge ごとに 100% ユーザーの上限に向かってガイドします（物理環境または仮想環境によって異なります）。</block>
@@ -486,7 +485,6 @@
   <block id="a314a20204b96ce855b4edecf455498b" category="list-text">オンボーディングコミュニケーション<block ref="ec13a4ed87a907c97165059568a0b0f6" category="inline-link-macro-rx"></block></block>
   <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">ネットアップテクニカルサポートでサポートケースをオープンするには、事前に Cloud Manager にネットアップサポートサイトのアカウントを追加し、サポートに登録しておく必要があります。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">サポートに登録します</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
   <block id="e0533a7cc48f1b65dc6efe4d93506732" category="sidebar">グローバルファイルキャッシュのドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
@@ -593,4 +591,5 @@
   <block id="4249aa75e9ea96b2d0d6b440b4f4b8f4" category="paragraph"><block ref="099296b5b160f80a9ee09ffb08be17ae" category="inline-link-macro-rx"></block> Global File Cache Edgeソフトウェアをアップグレードするには、次の手順に従います。</block>
   <block id="db8e575f29e7264d9dbb628ab57766be" category="paragraph">詳細については、を参照してください<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block>。</block>
   <block id="d9e1cd17d9a7ca15a50e2aaeed2f47c9" category="paragraph">グローバルファイルキャッシュは、グローバルファイルキャッシュが有効なインスタンス（コアまたはエッジ）に監視ソリューションやアンチウイルスソリューションをインストールしたり、適用したりすることは推奨しません。ソリューションをインストールするか、選択したか、またはポリシーに基づいて、次のベストプラクティスと推奨事項を適用する必要があります。一般的なウィルス対策スイートについては、の付録 A を参照してください<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block>。</block>
+  <block id="f3abc78aa44d210b1f7b92cda50a64cb" category="paragraph">このガイドラインでは、グローバルファイルキャッシュコアインスタンスごとに最大 10 個のエッジインスタンスを推奨しています。グローバルファイルキャッシュコアインスタンスごとに最大 20 個のエッジを使用します。これは、最も一般的なワークロードのタイプと平均ファイルサイズに大きく依存します。より一般的なワークロードでは、コアごとにEdgeインスタンスを追加できますが、このような場合は、ファイルセットの種類とサイズに応じて、EdgeインスタンスとCoreインスタンスの数を正しくサイジングする方法をアカウント担当者に確認してください。</block>
 </blocks>
