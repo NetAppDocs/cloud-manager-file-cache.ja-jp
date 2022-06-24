@@ -585,11 +585,17 @@
 <block ref="8e4798a9d84286ce2af64cff0824baca" category="inline-link-rx"></block></block>
   <block id="40e4043ab4e9038318e0841ef06244c0" category="paragraph"><block ref="a53645675256480c99fed4a542cb3aca" category="inline-link-rx"></block>
 <block ref="4c2b578017747f1ec201cbd7ab6ca56c" category="inline-link-rx"></block></block>
-  <block id="c1f077f3784bbcdc13bd9524bf4918b7" category="paragraph"><block ref="c1f077f3784bbcdc13bd9524bf4918b7" category="inline-link-rx"></block></block>
   <block id="5621e0035a66f3c4e8f0c7d5fff8a27f" category="paragraph"><block ref="5621e0035a66f3c4e8f0c7d5fff8a27f" category="inline-link-rx"></block></block>
   <block id="e2ed07bb6933c98e532659727830bc52" category="inline-link-macro">次の手順を実行します</block>
   <block id="4249aa75e9ea96b2d0d6b440b4f4b8f4" category="paragraph"><block ref="099296b5b160f80a9ee09ffb08be17ae" category="inline-link-macro-rx"></block> Global File Cache Edgeソフトウェアをアップグレードするには、次の手順に従います。</block>
   <block id="db8e575f29e7264d9dbb628ab57766be" category="paragraph">詳細については、を参照してください<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block>。</block>
   <block id="d9e1cd17d9a7ca15a50e2aaeed2f47c9" category="paragraph">グローバルファイルキャッシュは、グローバルファイルキャッシュが有効なインスタンス（コアまたはエッジ）に監視ソリューションやアンチウイルスソリューションをインストールしたり、適用したりすることは推奨しません。ソリューションをインストールするか、選択したか、またはポリシーに基づいて、次のベストプラクティスと推奨事項を適用する必要があります。一般的なウィルス対策スイートについては、の付録 A を参照してください<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block>。</block>
   <block id="f3abc78aa44d210b1f7b92cda50a64cb" category="paragraph">このガイドラインでは、グローバルファイルキャッシュコアインスタンスごとに最大 10 個のエッジインスタンスを推奨しています。グローバルファイルキャッシュコアインスタンスごとに最大 20 個のエッジを使用します。これは、最も一般的なワークロードのタイプと平均ファイルサイズに大きく依存します。より一般的なワークロードでは、コアごとにEdgeインスタンスを追加できますが、このような場合は、ファイルセットの種類とサイズに応じて、EdgeインスタンスとCoreインスタンスの数を正しくサイジングする方法をアカウント担当者に確認してください。</block>
+  <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日（バージョン1.3.1）</block>
+  <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">修正された問題</block>
+  <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">バージョン1.3.1用のグローバルファイルキャッシュエッジソフトウェアは、から入手できます<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。このリリースでは、に記載されている問題が修正されています<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
+  <block id="897b3098cd8a06c0ff8041457079a260" category="paragraph"><block ref="897b3098cd8a06c0ff8041457079a260" category="inline-link-rx"></block></block>
+  <block id="f12e4f9c6c0ea52ff0c85be8308ff143" category="list-text">アップグレード時に、正しいバージョンのMicrosoft再配布可能が正しくインストールされていないため、Tumが起動しません。GFCインストーラが修正され、正しいバージョンの再配布が可能になりました。</block>
+  <block id="e4e361b13d8ce3c010df78be535b3aeb" category="list-text">GFC License Manager Service（LMS）では、設定情報が上書きされるのではなく、更新されるようになりました。</block>
+  <block id="08b34be098f59c81e94653cf34a7c9ae" category="list-text">構成UIは、アップグレードプロセス中に正しいSystem.net.http dllにバインドされるようになりました。</block>
 </blocks>

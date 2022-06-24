@@ -18,6 +18,12 @@ Global File Cache の新機能について説明します。
 
 
 
+== 2022年6月23日（バージョン1.3.1）
+
+バージョン1.3.1用のグローバルファイルキャッシュエッジソフトウェアは、から入手できます https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["このページです"]。このリリースでは、に記載されている問題が修正されています https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["修正された問題"]。
+
+
+
 == 2022年5月19日（バージョン1.3.0）
 
 バージョン1.3.0のグローバルファイルキャッシュエッジソフトウェアは、から入手できます https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["このページです"]。
